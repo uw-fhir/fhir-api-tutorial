@@ -16,7 +16,7 @@ If you are getting an error saying Anaconda can't find the `fhirclient` module, 
 2. Type `jupyter console`.
 3. Paste the following code to make sure fhirclient (or any other missing packages) are installed where Anaconda can access it.
 
-        ```python
+        ```
         # Install a pip package in the current Jupyter kernel
         import sys
         !{sys.executable} -m pip install
