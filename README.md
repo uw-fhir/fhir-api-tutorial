@@ -1,11 +1,10 @@
 # Framingham Risk Calculator FHIR Tutorial 
 
-## Prerequesites
+## Prerequisites
 **Install these on your system before the tutorials!**
 
 - Anaconda: https://docs.anaconda.com/anaconda/install/
 - A public github account: got to www.github.com and create an account if you don't already have one!
-- 
 
 ### Test Your System
 
