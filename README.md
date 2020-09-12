@@ -1,10 +1,11 @@
-# Framingham Risk Calculator FHIR Tutorial 
+# FHIR API Tutorial 
 
 ## Prerequisites
 **Install these on your system before the tutorials!**
 
 - Anaconda: https://docs.anaconda.com/anaconda/install/
 - A public github account: got to www.github.com and create an account if you don't already have one!
+- On Windows, Git bash is recommended: https://gitforwindows.org/
 
 ### Test Your System
 
@@ -13,10 +14,10 @@
 1. Clone the tutorial from Github.
     - [ ] Create an account on Github if you have not already.
     - [ ] Login to your [Github account](https://github.com/login)
-    - [ ] Navigate to https://github.com/uw-fhir/fhir-calculator-tutorial.git
+    - [ ] Navigate to https://github.com/uw-fhir/fhir-api-tutorial.git
 
 2. Clone your project to your computer 
-    - [ ] Open a terminal or Git Bash
+    - [ ] Open a terminal (Mac/Linux) or Git Bash (Windows)
     - [ ] Navigate to a folder where you want to keep your project. For example:
             ```
             cd C:/Users/Piotr/code
@@ -24,12 +25,16 @@
     - [ ] Find the **project url** by clicking the `Clone or download` green button on your top right corner of your Github project page and copying it to your clipboard.
     - [ ] Run the following command in the terminal to clone this project into the chosen folder: 
         `git clone [url-copied-in-previous step]`
-    - [ ] When you open your chosen folder, you should see the project files in a directory called `fhir-calculator-tutorial`.
-3. Open your project folder in your text editor for this tutorial to be able to view and change the files. We'll be using VS Code - so if you're also using that editor, go to `File/Open Folder...` to accomplish this step. 
+        - alternatively, you can also download the repo as a zip file
+    - [ ] When you open your chosen folder, you should see the project files in a directory called `fhir-api-tutorial`.
+3. Make sure you can run jupyter and view the notebooks: `jupyter notebook .`
 
 
 ### Troubleshooting
-If you are getting an error saying Anaconda can't find the `fhirclient` module, you have to make sure you're installing the package in a way that the jupyter environment can load it. If doing a global `pip install fhirclient` does not work:
+PLEASE NOTE: As of September 2020, the version of the fhirclient module that is available from pip is DSTU3, not R4. R4 is the current and preferred API version. Install the package from the git source to get the R4 version: `pip install git+https://github.com/smart-on-fhir/client-py.git`
+
+
+If you are getting an error saying Anaconda can't find the `fhirclient` module, you have to make sure you're installing the package in a way that the jupyter environment can load it. 
 
 1. Open your `Anaconda Prompt`. 
 2. Type `jupyter console`.
