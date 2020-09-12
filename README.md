@@ -29,6 +29,9 @@
     - [ ] When you open your chosen folder, you should see the project files in a directory called `fhir-api-tutorial`.
 3. Make sure you can run jupyter and view the notebooks: `jupyter notebook .`
 
+# After the workshop
+Challenge yourself to implement another calculator from https://reference.medscape.com/guide/medical-calculators.
+Use the fhirclient python module or ClinFHIR.com to add data to the FHIR server to test your calculator!
 
 ### Troubleshooting
 PLEASE NOTE: As of September 2020, the version of the fhirclient module that is available from pip is DSTU3, not R4. R4 is the current and preferred API version. Install the package from the git source to get the R4 version: `pip install git+https://github.com/smart-on-fhir/client-py.git`
